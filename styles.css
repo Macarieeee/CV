@@ -1,0 +1,144 @@
+.sticky {
+    overflow: hidden;
+    background-color: rgb(41, 47, 56);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+
+.logos{
+  height: 4rem;
+  width: 4rem;
+}
+
+.grid-6-columns {
+  grid-column-gap: 56px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.content{
+  position: relative;
+}
+
+.content2{
+  position: relative;
+}
+
+.content3{
+  position: relative;
+}
+
+.content4{
+  position: relative;
+}
+
+.content5{
+  position: relative;
+}
+
+
+.content6{
+  position: relative;
+}
+
+
+.content:hover:after {
+  content:attr(data-legend);
+  position:absolute;
+  left:-10px;
+  bottom:0;
+  right:10px;
+  text-align:center;
+  transform:translateY(100%);
+}
+
+.content2:hover:after {
+  content:attr(data-legend);
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  text-align:center;
+  transform:translateY(100%);
+}
+
+.content3:hover:after {
+  content:attr(data-legend);
+  position:absolute;
+  left:-13px;
+  bottom:0;
+  right:0;
+  text-align:center;
+  transform:translateY(100%);
+}
+
+.content4:hover:after {
+  content:attr(data-legend);
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  text-align:center;
+  transform:translateY(100%);
+}
+
+.content5:hover:after {
+  content:attr(data-legend);
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  text-align:center;
+  transform:translateY(100%);
+}
+
+.content6:hover:after {
+  content:attr(data-legend);
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  text-align:center;
+  transform:translateY(100%);
+}
+
+.paragraph-large {
+  font-size: 19px!important;
+  height: 120px!important;
+}
+
+.card{
+  height: 67vh!important;
+  position: relative!important;
+}
+
+.card.skills {
+  padding: 74px 52px 100px;
+}
+
+.display-5{
+  margin-bottom: 50px!important;
+}
+
+.badges-top-wrapper {
+  z-index: 1;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto!important;
+  grid-auto-columns: 1fr;
+  display: grid;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+.badge-primary.small {
+  padding: 14px 22px;
+  font-size: 12px!important;
+  line-height: 18px;
+}
