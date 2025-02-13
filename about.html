@@ -7,6 +7,8 @@
   class="w-mod-js w-mod-ix"
 >
   <head>
+    <script src="https://unpkg.com/lucide@latest"></script> <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script> <!-- Lucide Icons -->
     <style>
       .wf-force-outline-none[tabindex="-1"]:focus {
         outline: none;
@@ -106,40 +108,50 @@
           style="opacity: 1"
         >
           <div class="header-content-wrapper">
-            <a href="/home" class="header-logo-link w-nav-brand"
+            <a
+              href="index.html"
+              aria-current="page"
+              class="header-nav-link w-nav-brand w--current title"
               ><img
-                src="https://assets-global.website-files.com/622fbc5a718ac3417fcd3d75/6230b271b897e76d2705ed6e_logo-developer-webflow-ecommerce-template.svg"
-                alt="Developer X Webflow Template - Logo"
+                src="code.png"
+                alt="Macarie Mihai-Alexandru|Web Developer|Portofolio"
                 class="header-logo"
-            /></a>
+            />Portofoliul meu</a>
             <div class="header-right-side">
+              <!-- <div class="menu-iconz" id="burger-menuz">
+                <i data-lucide="menu">ma-ta</i>
+            </div>
+            <div class="menu-itemz" id="menuz">
+                <button class="menu-btnz">Acasă</button>
+                <button class="menu-btnz">Despre mine</button>
+            </div> -->
               <ul role="list" class="header-nav-menu-list hidden-on-tablet">
                 <li
                   data-w-id="c5231f79-d17d-961c-a3fe-cabb2bfa14d4"
                   class="header-nav-list-item"
                 >
-                  <a href="/home" class="header-nav-link w-nav-link">Home</a>
+                  <a
+                    href="index.html"
+                    aria-current="page"
+                    class="header-nav-link w-nav-link w--current"
+                    >Acasa</a
+                  >
                 </li>
                 <li
                   data-w-id="c5231f79-d17d-961c-a3fe-cabb2bfa14d7"
                   class="header-nav-list-item"
                 >
-                  <a
-                    href="/about"
-                    aria-current="page"
-                    class="header-nav-link w-nav-link w--current"
-                    >About</a
-                  >
+                  <a href="about.html" class="header-nav-link w-nav-link">Despre mine</a>
                 </li>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </nav>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+      </div>
                   </div>
                 </li>
               </ul>
-              
               <div
                 data-w-id="c5231f79-d17d-961c-a3fe-cabb2bfa1510"
                 class="hamburger-menu-wrapper w-nav-button"
@@ -173,7 +185,6 @@
           </div>
           <div
             class="header-nav-menu-wrapper hamburger-desktop"
-            style="display: none"
           >
             <div
               class="header-nav-menu-bg"
@@ -236,7 +247,7 @@
         <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
       </div>
       <div class="section pd-top-130px---bottom-190px">
-        <div class="container-default w-container">
+        <div class="container-default w-container main-section">
           <div class="grid-2-columns hero-avatar-right">
             <div
               id="w-node-_020d9287-97de-99de-4f2e-3b975ffccd1d-f903f436"
@@ -602,7 +613,7 @@ de la HTML și CSS, la JavaScript și diverse framework-uri populare precum Reac
           </div>
         </div>
       </div>
-      <div class="section">
+      <!-- <div class="section">
         <div class="container-default w-container">
           <div class="grid-2-columns mg-bottom-64px">
             <div
@@ -759,8 +770,8 @@ de la HTML și CSS, la JavaScript și diverse framework-uri populare precum Reac
             </div>
           </div>
         </div>
-      </div>
-      <div class="section bg-neutral-700---40">
+      </div> -->
+      <!-- <div class="section bg-neutral-700---40">
         <div class="container-default w-container">
           <div class="grid-2-columns">
             <div
@@ -874,7 +885,7 @@ de la HTML și CSS, la JavaScript și diverse framework-uri populare precum Reac
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <footer class="footer-wrapper">
         <div class="container-default w-container">
           <div class="footer-top">
@@ -891,15 +902,15 @@ de la HTML și CSS, la JavaScript și diverse framework-uri populare precum Reac
               >
                 <div class="flex align-center mg-bottom-40px">
                   <img
-                    src="https://assets-global.website-files.com/622fbc5a718ac3417fcd3d75/62326876f08f3412b5a688bf_john-carter-footer-avatar-developer-webflow-ecommerce-template.jpg"
+                    src="image00001.jpg"
                     loading="eager"
                     alt="John Carter - Developer X Webflow Template"
                     class="avatar-circle _05 mg-right-24px"
                   />
                   <div>
-                    <div class="display-5 mg-bottom-8px">John Carter</div>
+                    <div class="display-5 mg-bottom-8px">Macarie Mihai-Alexandru</div>
                     <div class="text-400 medium color-neutral-500">
-                      Head of Engineering at Google
+                      Front-End Developer
                     </div>
                   </div>
                 </div>
@@ -910,12 +921,6 @@ de la HTML și CSS, la JavaScript și diverse framework-uri populare precum Reac
                     target="_blank"
                     class="social-icon w-inline-block"
                     ><div class="social-icon-font"></div></a
-                  ><a
-                    data-w-id="a9716d81-7fc3-0b29-1a2b-32de728b9513"
-                    href="https://twitter.com/"
-                    target="_blank"
-                    class="social-icon w-inline-block"
-                    ><div class="social-icon-font"></div></a
                   ><a
                     data-w-id="a9716d81-7fc3-0b29-1a2b-32de728b9516"
                     href="https://www.instagram.com/"
@@ -928,12 +933,6 @@ de la HTML și CSS, la JavaScript și diverse framework-uri populare precum Reac
                     target="_blank"
                     class="social-icon w-inline-block"
                     ><div class="social-icon-font"></div></a
-                  ><a
-                    data-w-id="a9716d81-7fc3-0b29-1a2b-32de728b951c"
-                    href="https://youtube.com/"
-                    target="_blank"
-                    class="social-icon w-inline-block"
-                    ><div class="social-icon-font"></div></a
                   ><a
                     data-w-id="a9716d81-7fc3-0b29-1a2b-32de728b951f"
                     href="https://github.com/"
@@ -959,7 +958,7 @@ de la HTML și CSS, la JavaScript și diverse framework-uri populare precum Reac
                   href="/contact"
                   class="display-3 text-decoration-none mg-bottom-40px w-inline-block"
                   ><div class="color-neutral-100 display-block">
-                    Get in touch
+                   Contactează-mă
                   </div>
                   <div class="line-square-icon link-icon-right color-accent-1">
                     
@@ -977,7 +976,7 @@ de la HTML și CSS, la JavaScript și diverse framework-uri populare precum Reac
                       href="mailto:contact@john.com"
                       class="link-wrapper white mg-top-16px w-inline-block"
                       ><div class="link-text heading-h4-size">
-                        contact@john.com
+                        mihaimacarie113@gmail.com
                       </div>
                       <div class="line-square-icon link-icon-right _26px">
                         
@@ -1000,7 +999,7 @@ de la HTML și CSS, la JavaScript și diverse framework-uri populare precum Reac
                       href="tel:(414)977-048"
                       class="link-wrapper white mg-top-16px w-inline-block"
                       ><div class="link-text heading-h4-size">
-                        (414) 977 - 048
+                        +40 771 284 433
                       </div>
                       <div class="line-square-icon link-icon-right _26px">
                         
@@ -1031,29 +1030,14 @@ de la HTML și CSS, la JavaScript și diverse framework-uri populare precum Reac
                 <a
                   data-w-id="a9716d81-7fc3-0b29-1a2b-32de728b9541"
                   href="/home"
-                  class="footer-link sibling-opacity-item"
+                  aria-current="page"
+                  class="footer-link sibling-opacity-item w--current"
                   >Home</a
                 ><a
                   data-w-id="a9716d81-7fc3-0b29-1a2b-32de728b9543"
                   href="/about"
-                  aria-current="page"
-                  class="footer-link sibling-opacity-item w--current"
+                  class="footer-link sibling-opacity-item"
                   >About</a
-                ><a
-                  data-w-id="a9716d81-7fc3-0b29-1a2b-32de728b9545"
-                  href="/portfolio"
-                  class="footer-link sibling-opacity-item"
-                  >Portfolio</a
-                ><a
-                  data-w-id="a9716d81-7fc3-0b29-1a2b-32de728b9547"
-                  href="/blog"
-                  class="footer-link sibling-opacity-item"
-                  >Blog</a
-                ><a
-                  data-w-id="a9716d81-7fc3-0b29-1a2b-32de728b9549"
-                  href="/contact"
-                  class="footer-link last sibling-opacity-item"
-                  >Contact</a
                 >
               </div>
               <div
@@ -1068,12 +1052,7 @@ de la HTML și CSS, la JavaScript și diverse framework-uri populare precum Reac
                 "
               >
                 <p class="color-neutral-100 mg-bottom-0">
-                  Copyright © Developer X | Designed by
-                  <a href="https://brixtemplates.com/" target="_blank"
-                    >BRIX Templates</a
-                  >
-                  - Powered by
-                  <a href="https://webflow.com/" target="_blank">Webflow</a>
+                  Copyright © Macarie Mihai-Alexandru
                 </p>
               </div>
             </div>
@@ -1103,5 +1082,6 @@ de la HTML și CSS, la JavaScript și diverse framework-uri populare precum Reac
         src="https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-text-d2.c82cec3b78.svg"
         alt="Made in Webflow" /></a
     ><span id="PING_IFRAME_FORM_DETECTION" style="display: none"></span>
+    <script src="teste.js"></script>
   </body>
 </html>

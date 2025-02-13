@@ -6,6 +6,22 @@
     width: 100%; /* Full width */
   }
 
+.header-logo{
+  height: 50px;
+  width: 80px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.title{
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logos{
   height: 4rem;
   width: 4rem;
@@ -112,16 +128,88 @@
 }
 
 .card{
-  height: 67vh!important;
+  height: auto;
   position: relative!important;
 }
 
 .card.skills {
-  padding: 74px 52px 100px;
+  padding: 50px;
 }
 
 .display-5{
-  margin-bottom: 50px!important;
+  margin-bottom: 10px!important;
+}
+
+.badges-top-wrapper {
+  z-index: 1;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto!important;
+  grid-auto-columns: 1fr 1fr;
+  display: grid;
+}
+
+
+
+.badge-primary.small {
+  white-space: nowrap;
+  text-align: center;
+}
+.divider{
+  margin-top: 150px!important;
+}
+
+.mg-bottom-24px {
+  margin-bottom: 40px!important;
+}
+
+
+@media (max-width: 768px) {
+  .main-section{
+    padding-top: 5vh;
+    height: auto;
+  }
+  .divider{
+    margin: 50px 0 !important;
+  }
+  .logos{
+    height: 40px;
+    width: 40px;
+  }
+  .grid-6-columns {
+    grid-column-gap: 66px;
+    grid-row-gap: 26px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid
+;
+}
+.abilities-section{
+  height: 57vh!important;
+  position: relative;
+}
+}
+
+@media screen and (max-width: 991px) {
+  .btn-circle-secondary.slider-arrow.left---top-left {
+      top: 46vh!important;
+      bottom: 0%;
+      left: 0%;
+      right: 80px;
+  }
+  .btn-circle-secondary.slider-arrow.right---top-left {
+    top: 46vh!important;
+    bottom: 0%;
+    left: 80px;
+    right: 0%;
+}
+.badge-primary.small {
+  padding: 14px 18px;
+  font-size: 12px !important;
+  line-height: 18px;
+  text-align: center;
 }
 
 .badges-top-wrapper {
@@ -133,12 +221,21 @@
   grid-auto-columns: 1fr;
   display: grid;
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 15px;
+  left: 15px;
 }
 
-.badge-primary.small {
-  padding: 14px 22px;
-  font-size: 12px!important;
-  line-height: 18px;
+.mg-bottom-24px {
+  margin-bottom: 24px!important;
+}
+
+.contact-image{
+  display: grid;
+  place-items: center;
+}
+
+.contact-image img{
+  height: 250px!important;
+  margin: 0!important;
+}
 }

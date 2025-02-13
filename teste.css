@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 1.25vh 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+    height: 8vh;
+}
+
+li{
+    list-style: none;
+    width: 10vw;
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.dark-mode {
+    background: rgba(30, 30, 30, 0.9);
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 10vw;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+    position: absolute;
+    left: 37.5vw;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a.active {
+    color: blue;
+    font-weight: 600;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.theme-btn, .menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    padding: 10px 0;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.show-menu {
+    display: flex;
+}
+
+.dark-mode .mobile-menu {
+    background: rgba(30, 30, 30, 0.9);
+}
+
+/* Ascunde butonul burger pe desktop */
+.menu-btn {
+    display: none;
+}
+
+/* Afișează butonul burger doar pe ecrane mici */
+@media (max-width: 1450px) {
+    .menu-btn {
+        display: block;
+    }
+
+    /* Ascunde butoanele de navigare pe telefon */
+    .nav-links {
+        display: none;
+    }
+
+    li{
+        width: 100%;
+    }
+
+    /* Când meniul mobil este activ, afișează lista */
+    .mobile-menu.show-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 10.5vh;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px 0;
+    }
+
+    /* Dark mode pentru meniul mobil */
+    .dark-mode .mobile-menu {
+        background: rgba(30, 30, 30, 0.9);
+    }
+}

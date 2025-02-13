@@ -13,3 +13,77 @@
 .mg-top{
   margin-top: 80px;
 }
+
+.main-section{
+  margin-top: 10vh;
+}
+
+.title {
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  height: 50px;
+  width: 80px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.menu-itemz{
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.menu-btnz {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+}
+
+.menu-btnz:hover {
+  background: #f0f0f0;
+}
+
+.menu-iconz {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .menu-iconz {
+        display: block;
+    }
+
+    .menu-itemz {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        flex-direction: column;
+        padding: 10px;
+        z-index: 100000;
+    }
+
+    .menu-btnz {
+        color: black;
+    }
+}
