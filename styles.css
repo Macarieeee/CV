@@ -187,20 +187,20 @@
 ;
 }
 .abilities-section{
-  height: 57vh!important;
+  height: 67vh!important;
   position: relative;
 }
 }
 
 @media screen and (max-width: 991px) {
   .btn-circle-secondary.slider-arrow.left---top-left {
-      top: 46vh!important;
+    bottom: 4vh!important;
       bottom: 0%;
       left: 0%;
       right: 80px;
   }
   .btn-circle-secondary.slider-arrow.right---top-left {
-    top: 46vh!important;
+    bottom: 4vh!important;
     bottom: 0%;
     left: 80px;
     right: 0%;
