@@ -199,6 +199,16 @@
     height: 40px;
     width: 40px;
   }
+
+  .header-logo{
+    height: 40px;
+    width: 70px;
+  }
+
+  .header-nav-link{
+    font-size: 17px;
+  }
+
   .grid-6-columns {
     grid-column-gap: 66px;
     grid-row-gap: 26px;
@@ -245,7 +255,14 @@
   line-height: 18px;
   text-align: center;
 }
-
+.grid-2-columns.footer-contact-links {
+  grid-column-gap: 28px;
+  grid-row-gap: 32px;
+  grid-template-columns: auto;
+}
+.header-nav-menu-list, .header-nav-menu-list{
+  display: block!important;
+}
 
 .badges-top-wrapper {
   z-index: 1;
