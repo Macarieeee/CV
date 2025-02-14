@@ -122,6 +122,28 @@
   transform:translateY(100%);
 }
 
+.abilities{
+  margin-bottom: 0!important;
+}
+
+.slide-item-mg{
+  height: auto!important;
+}
+
+.slider-wrapper{
+  height: auto!important;
+}
+
+.slider-wrapper {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: -10vw;
+}
+
+.w-slider-mask{
+  height: auto!important;
+}
+
 .paragraph-large {
   font-size: 19px!important;
   height: 120px!important;
@@ -190,17 +212,29 @@
   height: 67vh!important;
   position: relative;
 }
+.paragraph-large{
+  height: 140px!important;
+}
+}
+
+.whatsapp{
+  height: 25px;
+  text-align: center;
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+
+.abilities-image{
+  height: 75px;
 }
 
 @media screen and (max-width: 991px) {
   .btn-circle-secondary.slider-arrow.left---top-left {
-    bottom: 4vh!important;
       bottom: 0%;
       left: 0%;
       right: 80px;
   }
   .btn-circle-secondary.slider-arrow.right---top-left {
-    bottom: 4vh!important;
     bottom: 0%;
     left: 80px;
     right: 0%;
@@ -211,6 +245,7 @@
   line-height: 18px;
   text-align: center;
 }
+
 
 .badges-top-wrapper {
   z-index: 1;
@@ -237,5 +272,11 @@
 .contact-image img{
   height: 250px!important;
   margin: 0!important;
+}
+
+.slider-wrapper {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 0;
 }
 }
