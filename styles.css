@@ -188,6 +188,10 @@
 
 
 @media (max-width: 768px) {
+  .abilities {
+    padding-top: 96px;
+    padding-bottom: 230px!important;
+}
   .main-section{
     padding-top: 5vh;
     height: auto;
@@ -223,7 +227,7 @@
   position: relative;
 }
 .paragraph-large{
-  height: 140px!important;
+  height: 180px!important;
 }
 }
 
@@ -295,5 +299,12 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0);
   margin-left: 0;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .badge-primary.small {
+  padding: 7px 12px;
+  font-size:  1.5em
 }
 }
