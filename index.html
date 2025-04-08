@@ -7,6 +7,16 @@
   class="w-mod-js w-mod-ix"
 >
   <head>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "OSKxujJBHOd91T1wP",
+      });
+   })();
+</script>
     <meta charset="utf-8" />
     <title>Macarie Mihai-Alexandru</title>
     <meta
@@ -1520,7 +1530,7 @@
           </div>
         </div>
       </div> -->
-      <div class="section bg-neutral-700---40">
+      <div class="section bg-neutral-700---40" id="contact-form">
         <div class="container-default w-container">
           <div class="grid-2-columns">
             <div
@@ -1554,8 +1564,47 @@
                   <div class="link-underline" style="width: 0%"></div></div
               ></a>
               </h2>
+              <h2 class="display-3">
+                Sau completează formularul alăturat <br /></h2> 
             </div>
-            <div class="contact-image"><img src="call.png" style="height: 50vh; margin-top: -40px; margin-left: 30px;"></div>
+            <!-- contact-form.html -->
+<div class="contact-form-wrapper">
+  <form class="contact-form" id="contactForm" onsubmit="sendMail(event)">
+    <label for="fullName">Nume complet</label>
+    <input type="text" id="fullName" name="fullName" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Număr de telefon</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label>
+      <input type="checkbox" id="hasWebsite" name="hasWebsite" />
+      Ai deja un website?
+    </label>
+
+    <div id="websiteField" style="display: none;">
+      <label for="websiteUrl">Link website</label>
+      <input type="url" id="websiteUrl" name="websiteUrl" />
+    </div>
+
+    <label for="message">Mesaj</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Trimite</button>
+  </form>
+
+  <!-- Notificare -->
+  <div id="notification" class="hidden" style="
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: opacity 0.5s ease;
+  "></div>
+</div>
+
           </div>
         </div>
       </div>
@@ -1733,5 +1782,20 @@
         alt="Made in Webflow" /></a
     ><span id="PING_IFRAME_FORM_DETECTION" style="display: none"></span>
     <script src="teste.js"></script>
+
+    <script>
+      // Afișează câmpul link dacă checkbox-ul este bifat
+      document.getElementById("hasWebsite").addEventListener("change", function () {
+        const websiteField = document.getElementById("websiteField");
+        websiteField.style.display = this.checked ? "block" : "none";
+      });
+    </script>
+
+
+<!-- Scriptul tău personalizat -->
+<script src="email.js"></script>
+
+
+
   </body>
 </html>
